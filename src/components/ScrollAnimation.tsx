@@ -65,14 +65,16 @@ export default function ScrollAnimation({
          pointerEvents: isVisible ? 'auto' : 'none'
         }}
        >
-        <Image
-         src={src}
-         alt={`Frame ${index}`}
-         fill
-         priority
-         unoptimized
-         className="object-contain" // Reverted all zoom and cropping
-        />
+        <div className="relative w-full h-full scale-150 md:scale-100 transition-transform duration-700">
+         <Image
+          src={src}
+          alt={`Frame ${index}`}
+          fill
+          priority
+          unoptimized
+          className="object-contain"
+         />
+        </div>
        </div>
       );
      })}

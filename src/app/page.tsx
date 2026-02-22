@@ -6,14 +6,14 @@ export default async function Home() {
   const images = await getImagesFromFolder('/a');
 
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-white">
       {/* Scroll Animation Section */}
       <section className="relative">
         <ScrollAnimation images={images} />
 
         {/* Overlay text for the animation section */}
         <div className="pointer-events-none absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase drop-shadow-sm">
+          <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 md:text-white uppercase drop-shadow-[0_0_15px_rgba(255,255,255,0.5)] md:drop-shadow-[0_0_15px_rgba(0,0,0,0.5)]">
             Aura Pro
           </h1>
 
