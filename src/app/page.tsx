@@ -65,7 +65,7 @@ export default async function Home() {
 
       {/* Extra filler section */}
       <section className="bg-black text-white py-20 text-center border-t border-white/10">
-        <p className="text-white/40 text-sm">© 2026 ANTIGRAVITY AUDIO. ALL RIGHTS RESERVED.</p>
+        <p className="text-white/40 text-sm">© 2026 DARkNight AUDIO. ALL RIGHTS RESERVED.</p>
       </section>
     </main>
   );
