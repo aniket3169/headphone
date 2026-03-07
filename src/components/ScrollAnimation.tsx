@@ -48,7 +48,7 @@ export default function ScrollAnimation({
  return (
   <div
    ref={sectionRef}
-   className="relative w-full h-[500vh] bg-white"
+   className="relative w-full h-[300vh] md:h-[500vh] bg-white"
   >
    <div className="sticky top-0 w-full h-screen overflow-hidden bg-white flex items-center justify-center p-2 md:p-4 lg:p-5">
     <div className="relative w-full h-full mx-auto overflow-hidden">
