@@ -1,6 +1,6 @@
 import ScrollAnimation from '@/components/ScrollAnimation';
 import { getImagesFromFolder } from '@/lib/utils';
-
+import { FaInstagram } from "react-icons/fa";
 export default async function Home() {
   // Dynamically fetch all images from the public/images folder
   const images = await getImagesFromFolder('/a');
@@ -65,8 +65,23 @@ export default async function Home() {
 
       {/* Extra filler section */}
       <section className="bg-black text-white py-20 text-center border-t border-white/10">
-        <p className="text-white/40 text-sm">© 2026 DARkNight AUDIO. ALL RIGHTS RESERVED.</p>
-      </section>
+
+  <div className="flex justify-center mb-4">
+    <a
+      href="https://instagram.com/_aniket31_"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white/60 hover:text-white text-2xl transition"
+    >
+      <FaInstagram />
+    </a>
+  </div>
+
+  <p className="text-white/40 text-sm">
+    © 2026 DARkNight AUDIO. ALL RIGHTS RESERVED.
+  </p>
+
+</section>
     </main>
   );
 }
