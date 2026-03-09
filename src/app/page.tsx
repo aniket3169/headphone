@@ -2,7 +2,7 @@ import ScrollAnimation from '@/components/ScrollAnimation';
 import { getImagesFromFolder } from '@/lib/utils';
 import { FaInstagram } from "react-icons/fa";
 export default async function Home() {
-  // Dynamically fetch all images from the public/images folder
+  // Dynamically fetch all images from the public/images  folder
   const images = await getImagesFromFolder('/a');
 
   return (
